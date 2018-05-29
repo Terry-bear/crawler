@@ -5,7 +5,10 @@ import (
 	"io/ioutil"
 	"fmt"
 	"golang.org/x/text/transform"
-	"golang.org/x/text/encoding/simplifiedchinese"
+	"golang.org/x/net/html/charset"
+	"golang.org/x/text/encoding"
+	"io"
+	"bufio"
 )
 
 func main() {
@@ -18,11 +21,24 @@ func main() {
 		fmt.Println("Error: status code", resp.StatusCode)
 		return
 	}
-	utf8Reader := transform.NewReader(resp.Body, simplifiedchinese.GBK.NewDecoder())
-	all, err := ioutil.ReadAll(utf8Reader)
+	// 局限性,在不知道爬取网站编码时,无法正确执行
+	//utf8Reader := transform.NewReader(resp.Body, simplifiedchinese.GBK.NewDecoder())
+	// 修改后
+	e := determineEncoding(resp.Body)
+	determineReader := transform.NewReader(resp.Body, e.NewDecoder())
+	all, err := ioutil.ReadAll(determineReader)
 	if err != nil {
 		panic("啊哦,又出错了")
 	}
 	fmt.Printf("%s/n", all)
 
+}
+
+func determineEncoding(r io.Reader) encoding.Encoding {
+	bytes, err := bufio.NewReader(r).Peek(1024)
+	if err != nil {
+		panic(err)
+	}
+	e, _, _ := charset.DetermineEncoding(bytes, "")
+	return e
 }
