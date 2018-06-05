@@ -9,9 +9,15 @@ import (
 	"golang.org/x/text/encoding"
 	"io"
 	"bufio"
+	"go-crawler/engine"
 )
 
 func main() {
+	engine.Run(engine.Request{
+		Url:"http://www.zhenai.com/zhenghun",
+
+	})
+
 	resp, err := http.Get("http://www.zhenai.com/zhenghun")
 	if err != nil {
 		panic("啊哦,出错了")
