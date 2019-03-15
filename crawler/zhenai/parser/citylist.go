@@ -3,8 +3,8 @@ package parser
 import (
 	"regexp"
 
-	"imooc/crawler/config"
-	"imooc/crawler/engine"
+	"github.com/t496971418/crawler/crawler/config"
+	"github.com/t496971418/crawler/crawler/engine"
 )
 
 const cityListRe = `<a href="(http://www.zhenai.com/zhenghun/[0-9a-z]+)"[^>]*>([^<]+)</a>`

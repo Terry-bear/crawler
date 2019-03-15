@@ -7,9 +7,9 @@ import (
 
 	"flag"
 
-	"imooc/crawler/fetcher"
-	"imooc/crawler_distributed/rpcsupport"
-	"imooc/crawler_distributed/worker"
+	"github.com/t496971418/crawler/crawler/fetcher"
+	"github.com/t496971418/crawler/crawler_distributed/rpcsupport"
+	"github.com/t496971418/crawler/crawler_distributed/worker"
 )
 
 var port = flag.Int("port", 0,

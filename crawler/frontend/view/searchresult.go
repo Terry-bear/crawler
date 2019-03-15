@@ -4,7 +4,7 @@ import (
 	"html/template"
 	"io"
 
-	"imooc/crawler/frontend/model"
+	"github.com/t496971418/crawler/crawler/frontend/model"
 )
 
 type SearchResultView struct {

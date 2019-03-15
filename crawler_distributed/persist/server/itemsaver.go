@@ -8,9 +8,9 @@ import (
 	"flag"
 
 	"gopkg.in/olivere/elastic.v5"
-	"imooc/crawler/config"
-	"imooc/crawler_distributed/persist"
-	"imooc/crawler_distributed/rpcsupport"
+	"github.com/t496971418/crawler/crawler/config"
+	"github.com/t496971418/crawler/crawler_distributed/persist"
+	"github.com/t496971418/crawler/crawler_distributed/rpcsupport"
 )
 
 var port = flag.Int("port", 0,

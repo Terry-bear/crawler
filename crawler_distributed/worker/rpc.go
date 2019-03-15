@@ -1,6 +1,6 @@
 package worker
 
-import "imooc/crawler/engine"
+import "github.com/t496971418/crawler/crawler/engine"
 
 type CrawlService struct{}
 

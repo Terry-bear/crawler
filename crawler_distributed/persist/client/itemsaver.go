@@ -3,9 +3,9 @@ package client
 import (
 	"log"
 
-	"imooc/crawler/engine"
-	"imooc/crawler_distributed/config"
-	"imooc/crawler_distributed/rpcsupport"
+	"github.com/t496971418/crawler/crawler/engine"
+	"github.com/t496971418/crawler/crawler_distributed/config"
+	"github.com/t496971418/crawler/crawler_distributed/rpcsupport"
 )
 
 func ItemSaver(

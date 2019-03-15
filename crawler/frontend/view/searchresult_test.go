@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"imooc/crawler/engine"
-	"imooc/crawler/frontend/model"
-	common "imooc/crawler/model"
+	"github.com/t496971418/crawler/crawler/engine"
+	"github.com/t496971418/crawler/crawler/frontend/model"
+	common "github.com/t496971418/crawler/crawler/model"
 )
 
 func TestSearchResultView_Render(t *testing.T) {

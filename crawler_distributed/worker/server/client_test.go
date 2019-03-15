@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"imooc/crawler/config"
-	rpcnames "imooc/crawler_distributed/config"
-	"imooc/crawler_distributed/rpcsupport"
-	"imooc/crawler_distributed/worker"
+	"github.com/t496971418/crawler/crawler/config"
+	rpcnames "github.com/t496971418/crawler/crawler_distributed/config"
+	"github.com/t496971418/crawler/crawler_distributed/rpcsupport"
+	"github.com/t496971418/crawler/crawler_distributed/worker"
 )
 
 func TestCrawlService(t *testing.T) {

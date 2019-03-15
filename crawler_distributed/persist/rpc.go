@@ -4,8 +4,8 @@ import (
 	"log"
 
 	"gopkg.in/olivere/elastic.v5"
-	"imooc/crawler/engine"
-	"imooc/crawler/persist"
+	"github.com/t496971418/crawler/crawler/engine"
+	"github.com/t496971418/crawler/crawler/persist"
 )
 
 type ItemSaverService struct {

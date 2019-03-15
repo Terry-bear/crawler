@@ -3,9 +3,9 @@ package client
 import (
 	"net/rpc"
 
-	"imooc/crawler/engine"
-	"imooc/crawler_distributed/config"
-	"imooc/crawler_distributed/worker"
+	"github.com/t496971418/crawler/crawler/engine"
+	"github.com/t496971418/crawler/crawler_distributed/config"
+	"github.com/t496971418/crawler/crawler_distributed/worker"
 )
 
 func CreateProcessor(

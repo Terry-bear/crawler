@@ -1,6 +1,6 @@
 package engine
 
-import "imooc/crawler/config"
+import "github.com/t496971418/crawler/crawler/config"
 
 type ParserFunc func(
 	contents []byte, url string) ParseResult

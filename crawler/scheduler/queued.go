@@ -1,6 +1,6 @@
 package scheduler
 
-import "imooc/crawler/engine"
+import "github.com/t496971418/crawler/crawler/engine"
 
 type QueuedScheduler struct {
 	requestChan chan engine.Request

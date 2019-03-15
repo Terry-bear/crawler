@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"log"
 
-	"imooc/crawler/config"
-	"imooc/crawler/engine"
-	"imooc/crawler/zhenai/parser"
+	"github.com/t496971418/crawler/crawler/config"
+	"github.com/t496971418/crawler/crawler/engine"
+	"github.com/t496971418/crawler/crawler/zhenai/parser"
 )
 
 type SerializedParser struct {

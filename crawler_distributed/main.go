@@ -10,13 +10,13 @@ import (
 
 	"strings"
 
-	"imooc/crawler/config"
-	"imooc/crawler/engine"
-	"imooc/crawler/scheduler"
-	"imooc/crawler/zhenai/parser"
-	itemsaver "imooc/crawler_distributed/persist/client"
-	"imooc/crawler_distributed/rpcsupport"
-	worker "imooc/crawler_distributed/worker/client"
+	"github.com/t496971418/crawler/crawler/config"
+	"github.com/t496971418/crawler/crawler/engine"
+	"github.com/t496971418/crawler/crawler/scheduler"
+	"github.com/t496971418/crawler/crawler/zhenai/parser"
+	itemsaver "github.com/t496971418/crawler/crawler_distributed/persist/client"
+	"github.com/t496971418/crawler/crawler_distributed/rpcsupport"
+	worker "github.com/t496971418/crawler/crawler_distributed/worker/client"
 )
 
 var (

@@ -10,11 +10,11 @@ import (
 
 	"regexp"
 
+	"github.com/t496971418/crawler/crawler/config"
+	"github.com/t496971418/crawler/crawler/engine"
+	"github.com/t496971418/crawler/crawler/frontend/model"
+	"github.com/t496971418/crawler/crawler/frontend/view"
 	"gopkg.in/olivere/elastic.v5"
-	"imooc/crawler/config"
-	"imooc/crawler/engine"
-	"imooc/crawler/frontend/model"
-	"imooc/crawler/frontend/view"
 )
 
 type SearchResultHandler struct {
